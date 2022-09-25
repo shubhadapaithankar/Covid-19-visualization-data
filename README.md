@@ -7,7 +7,7 @@ I used the Dash module to Build a BigQuery-Connected Python Web Application to v
 ### The application is hosted on cloud environment Heroku.
 Application Link : https://covid19-analysis-255.herokuapp.com/ 
 
-Application Demo: https://www.dropbox.com/s/vgbp26eb5hdia9m/GoogleCloud-Configration-and-Application-Deployment.mov?dl=0 
+Application Demo: https://www.dropbox.com/s/xzseyn868981lqo/255-Homework-application-Dashbourd.mov?dl=0
 
 ### Google Colab Code: 
 https://colab.research.google.com/drive/1-EVu0Odm_yIuZ473ovZiwrGFOSuglmiP#scrollTo=dHKnCo0Hx81R

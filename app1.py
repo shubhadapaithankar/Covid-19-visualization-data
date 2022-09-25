@@ -13,12 +13,16 @@ print(np.pi)
 
 app = Dash(__name__)
 
+#HTML layout
 app.layout = html.Div(children=[
     # All elements from the top of the page
+    
     html.Div([
         html.Div([
-            html.H1(children='Covid19_mobility_Report'),
-            html.H2('Retail & Recreation Impact'),
+            html.H1(children='Covid19 Mobility report and there Impact'),
+            html.H2( 'The graph visualization reports movement trends over time by geography, across different categories of places such as retail and recreation, groceries and pharmacies, parks, transit stations, workplaces, and residential'),
+            html.H3('1.Retail & Recreation Impact'),
+            html.H4(' Visualization of percentage impact on retail and recreation from a baseline level.The beginning of the pandemic, there was a percentage increase which is when people started stocking up food supplies to prepare for lockdowns. Subsequently, there was a significant decrease in retail and recreation business for long periods.'),
              html.Button("Switch Axis", n_clicks=0, 
                 id='button'),
                  dcc.Graph(id="graph"),
@@ -28,13 +32,15 @@ app.layout = html.Div(children=[
     
 
     html.Div([
-            html.H2('Residential Impact'),
+            html.H3('2.Residential Impact'),
+            html.H4('Visualization of percentage residential change during the pandemic times. The change is generally positive which suggests that people mostly stayed home during the pandemic.'),
                dcc.Graph(id="bar"),
                ], className="six columns"),
     
     html.Div([
         html.Div([
-        html.H1(['Map']),
+        html.H3(['Retail and Recreation impact world Map']),
+        html.H4('Visualization map plot of retail and recreation impacts on world wide different countries.')
       ]),
 
     html.Div([
@@ -43,6 +49,7 @@ app.layout = html.Div(children=[
     ])
 ], className="row")
 
+#callback for visualization of graph
 
 @app.callback(
     Output("graph", "figure"), 
